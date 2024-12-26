@@ -1,0 +1,93 @@
+.movie-card {
+  background-color: #0f172a;
+  /* Nền của toàn bộ thẻ */
+  border-radius: 10px;
+  /* Bo góc của thẻ */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  /* Hiệu ứng bóng */
+  overflow: hidden;
+  /* Đảm bảo nội dung không tràn góc */
+  text-align: center;
+  /* Căn giữa nội dung */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  /* Hiệu ứng hover */
+
+  &:hover {
+    transform: translateY(-10px);
+    /* Thẻ nhấc lên khi hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    /* Tăng bóng khi hover */
+  }
+
+  /* Section for the movie card content */
+  .movie-card-item {
+    background-color: #0f172a;
+    /* Đảm bảo nền các mục nội dung có màu đồng nhất */
+
+    .poster {
+      height: 400px;
+      object-fit: cover;
+      /* Ảnh không bị méo */
+      transition: transform 0.3s ease;
+      /* Phóng to khi hover */
+
+      &:hover {
+        transform: scale(1.03);
+        /* Phóng to nhẹ */
+      }
+    }
+
+    .movie-content {
+      padding: 10px;
+      color: #ffffff;
+      /* Màu chữ trắng */
+      font-family: Arial, sans-serif;
+
+      .movie-title {
+        font-size: 18px;
+        /* Tiêu đề phim lớn hơn */
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .movie-time {
+        font-size: 14px;
+        /* Kích thước thời gian nhỏ hơn */
+        color: #cfcfcf;
+        /* Màu xám nhạt */
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .show-trailer {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    /* Booking button styles */
+    .booking-button {
+      padding: 10px 20px;
+      background-color: #ffc107;
+      /* Màu nền vàng */
+      color: #6a0dad;
+      /* Màu chữ tím */
+      font-size: 14px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: #d4a307;
+        /* Màu vàng đậm hơn khi hover */
+        color: #4b0082;
+        /* Tím đậm hơn khi hover */
+      }
+    }
+  }
+
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './scss/reset.scss';
+html {
+    font-size: 62.5%; /* Tương đương với 10px = 1rem */
+    color: #fff;
+
+}
+
+body{
+    color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    min-height: 100vh;
+    overflow: hidden auto;
+}
+
+.heading {
+    color: #000000;
+    font-family: var(--font-title);
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+[hidden] {
+    display: none;
+}
+
+input {
+    background: transparent;
+    border: none;
+    color: #94a3b8;
+    font-family: var(--font-pri);
+    font-size: 1.6rem;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+}
+
+
+:root{
+    --font-title: "Anton", sans-serif;
+    --sp-sc: 10rem;
+    --col-gap: 3.2rem;
+    --pd-container: 1.5rem;
+    --w-container: 123rem;
+    --row-gap: 2.4rem;
+}
+.container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: var(--w-container);
+    padding: 0 var(--pd-container);
+    width: 100%;
+}

@@ -1,0 +1,129 @@
+.ticket-type-container {
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+    margin-bottom: 80px;
+
+    .ticket-card:hover .ticket-info .ticket-name,
+    .ticket-card:hover .ticket-info .ticket-type,
+    .ticket-card:hover .ticket-info .ticket-price {
+        color: #f9e716 !important;
+        /* Màu vàng */
+    }
+
+    .title {
+        text-align: center;
+        font-size: 32px;
+        font-weight: bold;
+        color: #ffffff;
+        /* Màu chữ mặc định trắng */
+        margin-bottom: 40px;
+    }
+
+    .ticket-list {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        .ticket-card {
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            padding: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: transparent;
+            /* Nền trong suốt */
+            transition: all 0.3s ease;
+
+            &:hover {
+                border-color: #f9e716;
+                /* Màu viền vàng khi hover */
+                color: #f9e716 !important;
+                /* Màu chữ vàng khi hover */
+            }
+
+            .ticket-info {
+                margin-bottom: 16px;
+
+                .ticket-name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    /* Màu chữ mặc định trắng */
+                    transition: color 0.3s ease;
+                }
+
+                .ticket-type {
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: #f9e716;
+                    /* Màu vàng */
+                }
+
+                .ticket-price {
+                    font-size: 16px;
+                    color: #ffffff;
+                    /* Màu chữ mặc định trắng */
+                    transition: color 0.3s ease;
+                }
+            }
+
+            .ticket-counter {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                .counter-btn {
+                    background-color: #3b2681;
+                    color: #ffffff;
+                    border: none;
+                    border-radius: 4px;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 18px;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    &:hover {
+                        background-color: #4c2c97;
+                        /* Tím nhạt hơn khi hover */
+                    }
+                }
+
+                .ticket-count {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #ffffff;
+                    /* Màu chữ mặc định trắng */
+                }
+            }
+        }
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+        .ticket-list {
+            flex-direction: column;
+            gap: 20px;
+
+            .ticket-card {
+                width: 100%;
+            }
+        }
+
+        .title {
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .title {
+            font-size: 24px;
+        }
+    }
+}
