@@ -190,17 +190,17 @@ const Footer = () => {
                      <li class="category-item">
                         <a href="#" title="Liên hệ" class="category-link">
                            {" "}
-                           Liên hệ: 0357932125{" "}
+                           Liên hệ: 0123456789{" "}
                         </a>
                      </li>
                      <li class="category-item">
                         <a href="#" title="Email" class="category-link">
                            {" "}
-                           Email: ktmoviesmta@gmail.com{" "}
+                           Email: kk@gmail.com{" "}
                         </a>
                      </li>
                      <li class="category-item">
-                        <span>@2023-Khắc Tuấn</span>
+                        <span>@2025-KK</span>
                      </li>
                   </ul>
                </div>
